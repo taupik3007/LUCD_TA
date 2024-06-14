@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url(/static/css/img/latar.jpg) no-repeat;
+    background-position: center;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0,7), rgba(0,0,0,0,7));
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 30px;
+    color: #ffff;
+    text-decoration: none;
+    font-weight: 700
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #ffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffff;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+
+}
+.container1 {
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+.card1{
+    background-image: url(/static/css/img/AnnualCrop_1518.jpg);
+}
+
+.card2{
+    background-image: url(/static/css/img/Forest_1000.jpg);
+}
+
+.card3{
+    background-image: url(/static/css/img/HerbaceousVegetation_953.jpg); 
+}
+
+.card4{
+    background-image: url(/static/css/img/Highway_293.jpg); 
+}
+.card5{
+    background-image: url(/static/css/img/Industrial_1000.jpg);
+}
+
+.card6{
+    background-image: url(/static/css/img/Pasture_575.jpg);
+}
+
+.card7{
+    background-image: url(/static/css/img/PermanentCrop_1228.jpg); 
+}
+
+.card8{
+    background-image: url(/static/css/img/Residential_2391.jpg); 
+}
+.card9{
+    background-image: url(/static/css/img/River_1419.jpg); 
+}
+
+.card10{
+    background-image: url(/static/css/img/SeaLake_1000.jpg); 
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #099;
+}
+
+.card p{
+    text-shadow: 0 0 5px #099;
+    font-size: 9px;
+}
